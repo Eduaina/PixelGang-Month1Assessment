@@ -19,7 +19,7 @@ body {
 .top-right img {
   width: 18px; margin-left: 10px;vertical-align: middle;
 }
-/* ===== NAVIGATION BAR ===== */
+/* navigation section */
 .nav-bar {
   background-color: #ffffff; color: #333; padding: 12px 20px; display: flex;justify-content: space-between;
   align-items: center; border-bottom: 1px solid #eee;
@@ -42,7 +42,7 @@ body {
 .nav-right img {
   width: 20px; margin-left: 15px; vertical-align: middle;
 }
-/* === STYLING FOR THE SPLIT-LAYOUT SECTION === */
+/*split layout section*/
 
 /* Global Variables */
 :root {
@@ -51,7 +51,7 @@ body {
 * {
     box-sizing: border-box;
 }
-/* Base styling for the whole section (main-section) */
+/*main section*/
 .main-section {
     background-color: var(--bg-main);
     padding: 0 15px; 
@@ -73,8 +73,8 @@ body {
     width: 20px; margin-right: 8px;
 }
 /* 2. Main Headline */
-.main-title { background-color: #f6f6f6;
-    font-size: 3rem; font-weight: 700; line-height: 1.2; margin-bottom: 15px; color: var(--text-dark); 
+.main-title { 
+    font-size: 4rem; font-weight: 700; line-height: 1.2; margin-bottom: 15px; color: var(--text-dark); 
 }
 .purple-text {
     color: var(--primary-purple); 
@@ -114,7 +114,7 @@ body {
 .customer-count {
     font-size: 0.85rem; color: #777;
 }
-/* === RIGHT SIDE STYLING (main-right) === */
+/*Right side-main-right*/
 .main-right { 
     flex: 1; position: relative; display: flex; justify-content: center;
     align-items: flex-end; height: 600px; /* Fixed height for visual consistency */
@@ -133,7 +133,7 @@ body {
     width: 18px; margin-right: 5px;
 }
 .badge-secure-payment {
-    top: 20%; right: 0;
+    top: 30%; right: 0;
     transform: rotate(3deg);
 }
 .badge-fast-delivery {
@@ -149,12 +149,12 @@ body {
     color: white; font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
     text-align: center; line-height: 1.1;
 }
-/* === STYLING FOR OCCASIONS=== */
+/* OCCASIONS */
 /* Main Section Wrapper */
 .secondary-section { 
     background-color: #ffffff;padding: 80px 15px; 
 }
-/* General Section Headings */
+/* Section Headings */
 .occasions-header {
     max-width: 1200px;margin: 0 auto;padding-bottom: 20px;
 }
@@ -375,11 +375,11 @@ body {
     color: white; font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
     text-align: center; line-height: 1.1;
 }
-/* === STYLING FOR OCCASIONS=== */
+/* === OCCASIONS SECTION TWO=== */
 .secondary-section { 
     background-color: #ffffff;padding: 80px 15px; 
 }
-/* General Section Headings */
+/* Section Headings */
 .occasions-header {
     max-width: 1200px;margin: 0 auto;padding-bottom: 20px;
 }
@@ -391,7 +391,7 @@ body {
 .purple-text {
     color: var(--primary-purple); 
 }
-/* === Section 1: Occasions Grid === */
+/* Occasions Grid */
 .occasions-grid {
     max-width: 1200px;margin: 0 auto 80px;display: flex;justify-content: center;flex-wrap: wrap; gap: 20px; /* Space between items */
 }
