@@ -1654,7 +1654,17 @@ body {
 
 /* section 5 ------------ Rahmota */
 
+/* Instagram section */
+.instagram {
+    text-align: center;
+    padding: 40x20px;
+}
 
+
+.instagram h2 {
+    font-size: 24px;
+    margin: auto;
+}
 
 
 
