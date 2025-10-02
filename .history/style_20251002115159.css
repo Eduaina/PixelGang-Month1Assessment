@@ -556,17 +556,15 @@ h5 {
 /* section 3 ------------ Temmie */
 
 .section3{
-    height: 300vh;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #F6F6F6;
+  
 }
 
 .new-arrival-sect >  {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
+  background-color: #F6F6F6;
+  width: 100%;
 }
 .marq-sect {
   background-color: #5e00a6;
@@ -714,6 +712,7 @@ h5 {
 }
 
 .weekly-deals {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,10 +726,9 @@ h5 {
   border: 2px solid transparent;
   border-radius: 20px;
   background-color: #5e00a6;
+  padding: 0 50px;
   width: 85%;
-}
-.weekly-text-sec {
-  padding: 30px;
+ 
 }
 .week-text1{
   color: #fd93e8;
@@ -761,7 +759,7 @@ width: 60%;
 }
 
 .weekly-img-sec {
-  /* width: 0%; */
+  /* width: 40%; */
   height: 100%;
 }
 .weekly-img-sec > img {

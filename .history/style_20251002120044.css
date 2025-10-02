@@ -729,9 +729,7 @@ h5 {
   background-color: #5e00a6;
   width: 85%;
 }
-.weekly-text-sec {
-  padding: 30px;
-}
+.weekl
 .week-text1{
   color: #fd93e8;
   font-size: 2rem;
@@ -761,7 +759,7 @@ width: 60%;
 }
 
 .weekly-img-sec {
-  /* width: 0%; */
+  /* width: 40%; */
   height: 100%;
 }
 .weekly-img-sec > img {
