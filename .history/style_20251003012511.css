@@ -1133,10 +1133,16 @@ width: 60%;
   width: 30vw;
   height: 50vh;
 }
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  overflow: hidden;
+}
 .best-seller {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10%;
+  /* gap: 30px; */
+  justify-content: space-between;
 }
 .best-seller-img{
   position: relative;
@@ -1152,18 +1158,18 @@ width: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 
 }
 .shopnow {
   position: absolute;
-  top: 20px;
-  bottom: 20px;
+  top: 50px;
   border: 3px solid white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  height: 85vh;
-  width: 18vw;
+  height: 90vh;
+  width: 15vw;
   
   align-items: center;
 }
@@ -1192,13 +1198,6 @@ width: 60%;
     color: white;
     position: absolute;
   bottom: 20px;
-}
-
-.product-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  overflow: hidden;
 }
 
 

@@ -1136,7 +1136,7 @@ width: 60%;
 .best-seller {
   display: flex;
   justify-content: space-around;
-  margin-top: 10%;
+  margin-top: 50px;
 }
 .best-seller-img{
   position: relative;
