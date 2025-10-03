@@ -1097,6 +1097,9 @@ h5 {
 .weekly-text-sec {
   padding: 30px;
 }
+.weekly-text-sec >h2 {
+  padding: 30px;
+}
 .week-text1{
   color: #fd93e8;
   font-size: 2rem;
@@ -1105,8 +1108,7 @@ h5 {
 .weekly-text-sec > h2{
 font-size: 3rem;
 text-transform: capitalize;
-width: 65%;
-color: white;
+width: 60%;
 }
 .beautiful-flowers {
   color:#fd93e8;
@@ -1170,7 +1172,6 @@ justify-content: center;
   display: flex;
   justify-content: space-around;
   margin-top: 10%;
-  width: 100%;
 }
 .best-seller-img{
   position: relative;
