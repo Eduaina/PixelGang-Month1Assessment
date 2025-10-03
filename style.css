@@ -1654,16 +1654,122 @@ body {
 
 /* section 5 ------------ Rahmota */
 
-/* Instagram section */
-.instagram {
+/* Follow-us section */
+.follow.us {
     text-align: center;
     padding: 40x20px;
 }
 
+.follow.us h2 span {
+  color: purple;
+}
+.follow.us div {
+  display: flex;
+  flex-wrap: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.follow.us img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-.instagram h2 {
-    font-size: 24px;
-    margin: auto;
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  background: purple;
+  padding: 15px;
+  gap: 25px;
+}
+
+.categories a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq {
+  padding: 40px 20px;
+}
+.faq h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.faq h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.faq h2 span {
+  color: purple;
+}
+.faq-contaioner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+.faq-list {
+  flex: 2;
+}
+.faq-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+.faq-item.active {
+  background: purple;
+  color: #fff;
+}
+.faq-item.active .faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.faq-support {
+  flex: 1;
+}
+.support-box {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.support-box h4 {
+margin-bottom: 10px;
+}
+.support-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: purple;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #fafafa;
+  margin-top: 30px;
+}
+.features p {
+  font-weight: bold;
+  font-size: 16px;
+}
+.features span {
+  font-size: 14px;
+  color: black;
 }
 
 
