@@ -2,143 +2,327 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #0E0E0E;
-    width: 100%;
-    height: 100%;
     font-family: 'Times New Roman';
 }
 
+
 /* Section 1 -------- Joan */
+
+/* Purple top label with Social Media links */
+.section1 {
+  width: 100%;
+}
+
+.width {
+  background-color: #6d28d9; 
+}
+
 .top-bar {
-  background-color: #6d28d9; color: white; font-size: 0.9rem; padding: 8px 20px;
-  display: flex; justify-content: space-between; align-items: center;
+  width: 80%;
+  color: #FFD5FF; 
+  font-size: 0.9rem; 
+  font-weight: 500;
+  padding: 15px 20px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin: auto;
 }
+
 .top-bar a {
-  color: yellow; text-decoration: underline; margin-left: 5px;
+  color: #F28DFF; 
+  font-weight: 700;
 }
-.top-right img {
-  width: 18px; margin-left: 10px;vertical-align: middle;
+
+.top-right {
+  display: flex;
 }
+
+.circle {
+  border-radius: 50%;
+  width: 22px;
+  background-color: #F5FAF8;
+  margin: 2px 10px 0 0;
+}
+
+.circle a img {
+  width: 16px; 
+  vertical-align: middle;
+  padding: 3px;
+}
+
+/* End of purple label including the social media navigation links */
+
+
 /* navigation section */
-.nav-bar {
-  background-color: #ffffff; color: #333; padding: 12px 20px; display: flex;justify-content: space-between;
-  align-items: center; border-bottom: 1px solid #eee;
+.nav-width {
+  background-color: white;
 }
+
+.nav-bar {
+  width: 80%;
+  padding: 16px 24px 16px 0; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin: auto;
+}
+
 .nav-left {
-  display: flex; align-items: center;
+  display: flex; 
+  align-items: center;
+  gap: 5px;
 }
 .nav-left img {
-    width: 30px; margin-right: 8px;
+    width: 25px; 
+    padding: 3px;
+    vertical-align: middle;
 }
-.logo-text {
-  font-weight: bold; font-size: 1.2rem; color: #6d28d9;
-}
-.nav-middle a {
-  margin: 0 12px; text-decoration: none; color: #333; font-size: 0.95rem;
-}
-.nav-middle a:hover {
-  color: #6d28d9; /* purple hover effect */
-}
-.nav-right img {
-  width: 20px; margin-left: 15px; vertical-align: middle;
-}
-/*split layout section*/
 
-/* Global Variables */
-:root {
-    --primary-purple:#6d28d9; --text-dark: #2a2a2a; --bg-main: #f0f0f5;  --bg-tagline: #e3e3ff; --pink-accent: #eb3b5a;
+.nav-circle {
+  background-color: #550795;
+  border-radius: 50%;
 }
-* {
-    box-sizing: border-box;
+
+.logo-text {
+  font-weight: bolder; 
+  font-size: 1.3rem; 
+  color: #222222;
 }
+
+.nav-middle a {
+  margin: 0 12px; 
+  text-decoration: none; 
+  color: #292929; 
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a:hover {
+  color: gray; 
+}
+
+.nav-right img {
+  width: 20px; 
+  margin-left: 10px; 
+}
+
+
+
 /*main section*/
 .main-section {
-    background-color: var(--bg-main);
-    padding: 0 15px; 
+    background-color: #F6F6F6;
 }
-/* Flex Container for the 50/50 split */
+
 .content-container {
-    max-width: 1200px; margin: 0 auto; padding: 80px 0; display: flex; align-items: center; gap: 40px;
+    width: 80%; 
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0xMi41OTMgMjMuMjU4bC0uMDExLjAwMmwtLjA3MS4wMzVsLS4wMi4wMDRsLS4wMTQtLjAwNGwtLjA3MS0uMDM1cS0uMDE2LS4wMDUtLjAyNC4wMDVsLS4wMDQuMDFsLS4wMTcuNDI4bC4wMDUuMDJsLjAxLjAxM2wuMTA0LjA3NGwuMDE1LjAwNGwuMDEyLS4wMDRsLjEwNC0uMDc0bC4wMTItLjAxNmwuMDA0LS4wMTdsLS4wMTctLjQyN3EtLjAwNC0uMDE2LS4wMTctLjAxOG0uMjY1LS4xMTNsLS4wMTMuMDAybC0uMTg1LjA5M2wtLjAxLjAxbC0uMDAzLjAxMWwuMDE4LjQzbC4wMDUuMDEybC4wMDguMDA3bC4yMDEuMDkzcS4wMTkuMDA1LjAyOS0uMDA4bC4wMDQtLjAxNGwtLjAzNC0uNjE0cS0uMDA1LS4wMTgtLjAyLS4wMjJtLS43MTUuMDAyYS4wMi4wMiAwIDAgMC0uMDI3LjAwNmwtLjAwNi4wMTRsLS4wMzQuNjE0cS4wMDEuMDE4LjAxNy4wMjRsLjAxNS0uMDAybC4yMDEtLjA5M2wuMDEtLjAwOGwuMDA0LS4wMTFsLjAxNy0uNDNsLS4wMDMtLjAxMmwtLjAxLS4wMXoiLz48cGF0aCBmaWxsPSIjMWQwYjMwIiBkPSJNMTAuNTg2IDIuNWEyIDIgMCAwIDEgMi43MDEtLjExN2wuMTI3LjExN2wxLjYyNyAxLjYyNmwuMTc0LS4yNDJsLjMxNS0uNDUzbC4yMDUtLjMwOGwuMjA2LS4zMjljLjMwOC0uNDguNjc3LS45MzcgMS4zMjYtLjc1OGExIDEgMCAwIDEgLjcyNi44NDNMMTggM3Y2YTYgNiAwIDAgMS00Ljc2NSA1Ljg3M2wtLjIzNS4wNDR2NGE2LjAxIDYuMDEgMCAwIDAgNC40MjMtMy4zNDZhMSAxIDAgMSAxIDEuODA3Ljg1OEE4IDggMCAwIDEgMTMgMjAuOTRjMCAuNTY2LS40MDcgMS4wNjEtMSAxLjA2MXMtMS0uNDk1LTEtMS4wNjJhOCA4IDAgMCAxLTYuMjMtNC41MDlhMSAxIDAgMCAxIDEuODA3LS44NThhNi4wMSA2LjAxIDAgMCAwIDQuMTcgMy4yOThsLjI1My4wNDh2LTRhNiA2IDAgMCAxLTQuOTk1LTUuNjdMNiA5VjNhMSAxIDAgMCAxIC43MzMtLjk2NGMuNTk3LS4xNjUuOTU5LjIxMiAxLjI1NC42NDlsLjM0NS41NDJsLjEzOC4yMDRsLjMxNS40NTNsLjE3NC4yNDJ6TTE2IDYuMTYzYy0uNTEyLjYzNy0xLjExMSAxLjMwNC0xLjczNSAxLjgyNEMxMy42NyA4LjQ4MyAxMi44NzIgOSAxMiA5cy0xLjY3LS41MTctMi4yNjUtMS4wMTNjLS41Mi0uNDMzLTEuMDIyLS45NjgtMS40NzItMS41MDNMOCA2LjE2NFY5YTQgNCAwIDAgMCA3Ljk5NS4yTDE2IDl6bS00LTIuMjQ5bC0xLjc3NCAxLjc3NGwuMzg1LjQyYy40LjQyNC45MTEuODkyIDEuMzg5Ljg5MnMuOTktLjQ2OCAxLjM5LS44OTJsLjM4NC0uNDJ6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: top 100px left 30px;
 }
-/* === LEFT SIDE STYLING (main-left) === */
+
 .main-left { 
-    flex: 1; padding-right: 40px;
+    flex: 1; 
+    background-color: #F6F6F6;
+    opacity: 0.95;
+    position: relative;
 }
-/* 1. Top Tagline Box */
+
 .tagline-box {
-    display: inline-flex; align-items: center; background-color: var(--bg-tagline);
-    color: var(--text-dark); font-weight: 500; padding: 8px 15px; border-radius: 20px;margin-bottom: 25px;
+    display: inline-flex; 
+    align-items: center;
+    background-color: white;
+    color: #262626; 
+    font-weight: 600; 
+    font-size: 20px;
+    padding: 12px ; 
+    border-radius: 25px;
+    gap: 10px;
 }
 .tagline-icon {
-    width: 20px; margin-right: 8px;
+    width: 30px;
 }
-/* 2. Main Headline */
+
+.petals {
+  position: absolute;
+  width: 40px;
+  right: 160px;
+}
+
 .main-title { 
-    font-size: 4rem; font-weight: 700; line-height: 1.2; margin-bottom: 15px; color: var(--text-dark); 
+    font-size: 3.1rem; 
+    font-weight: 700; 
+    line-height: 1.2; 
+    margin-bottom: 15px;
+    color: #252525; 
 }
 .purple-text {
-    color: var(--primary-purple); 
+    color: #5D00A2; 
 }
-/* 3. Description */
+
 .main-description {
-    font-size: 1rem; line-height: 1.6; margin-bottom: 30px; color: #666; max-width: 450px;
+    font-size: 1rem;  
+    margin: 30px 0 50px 0; 
+    color: #666666d9; 
+    max-width: 450px;
 }
-/* 4. Action Buttons Group */
+
 .action-group {
-    display: flex; align-items: center; gap: 20px;margin-bottom: 30px;
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+    margin-bottom: 30px;
 }
 .btn-shop-now {
-    padding: 12px 30px; background-color: var(--primary-purple); color: white; border: none; border-radius: 8px;
-    font-weight: 600; cursor: pointer;
+    padding: 12px 30px; 
+    background-color: #550795; 
+    color: rgba(255, 255, 255, 0.846); 
+    border: none; 
+    border-radius: 30px;
+    font-weight: 600; 
+    cursor: pointer;
 }
 .btn-view-products {
-    color: var(--primary-purple); text-decoration: none; font-weight: 600; border-bottom: 2px solid var(--primary-purple);
-    padding-bottom: 2px;
+    color: #292929; 
+    text-decoration: underline; 
+    font-weight: 600; 
 }
-/* 5. Ratings and Trust Group */
+
 .ratings-group {
-    display: flex; align-items: center; gap: 15px;
+    display: flex; 
+    align-items: center; 
+    margin-top: 60px;
 }
-.avatar-group { display: flex; position: relative; height: 40px; width: 100px; }
-.customer-pic { width: 35px; height: 35px; border-radius: 50%; border: 2px solid var(--bg-main); position: absolute; object-fit: cover; }
-.customer-pic:nth-child(1) { left: 0px; z-index: 4; }
-.customer-pic:nth-child(2) { left: 20px; z-index: 3; }
-.customer-pic:nth-child(3) { left: 40px; z-index: 2; }
-.plus-sign { position: absolute; left: 60px; width: 35px; height: 35px; border-radius: 50%; background-color: var(--pink-accent); color: white; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; z-index: 5; }
+
+.avatar-group { 
+  display: flex; 
+  position: relative; 
+  height: 50px; 
+  width: 200px; 
+}
+
+.customer-pic { 
+  width: 45px; 
+  height: 45px; 
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative; 
+  object-fit: cover; 
+}
+
+.customer-pic:nth-child(1) { 
+  left: 0px; 
+  z-index: 1; 
+}
+
+.customer-pic:nth-child(2) { 
+  left: -20px; 
+  z-index: 2; 
+}
+
+.customer-pic:nth-child(3) {
+   left: -40px; 
+   z-index: 3; 
+  }
+
+  .customer-pic:nth-child(4) {
+   left: -60px; 
+   z-index: 4; 
+  }
+
+.plus-sign { 
+  position: absolute; 
+  left: 110px; 
+  width: 47px; 
+  height: 47px; 
+  border-radius: 50%; 
+  background-color: #FF91E4; 
+  color: rgb(43, 43, 94); 
+  font-size: 2rem; 
+  font-weight: bold;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  z-index: 5; 
+}
+
 .trust-text-group {
-    display: flex; flex-direction: column;
+    display: flex; 
+    flex-direction: column;
+    gap: 8px;
 }
+
 .rating-value {
-   font-weight: 600; color: var(--primary-purple);
+   font-weight: 600; 
+   color: #252525;
+   font-size: 1.3rem;
 }
+
 .customer-count {
-    font-size: 0.85rem; color: #777;
+    font-size: 0.85rem; 
+    color: #777;
 }
-/*Right side-main-right*/
+
 .main-right { 
-    flex: 1; position: relative; display: flex; justify-content: center;
-    align-items: flex-end; height: 600px; /* Fixed height for visual consistency */
+    flex: 1; 
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end; 
+    height: 600px; 
 }
+
 .main-image {
-    width: 100%; height: 100%; max-width: 600px; object-fit: contain; 
+    height: 90vh; 
+    max-width: 600px;
     z-index: 10;
+    margin: auto;
 }
-/* Floating Info Badges */
+
 .floating-badge {
-    position: absolute; background-color: white; color: var(--primary-purple); padding: 10px 15px;
-    border-radius: 20px; font-size: 0.9rem; font-weight: 500; display: flex;
-    align-items: center; z-index: 20; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); white-space: nowrap;
+    position: absolute; 
+    background-color: white; 
+    color: purple; 
+    padding: 10px 15px;
+    border-radius: 20px; 
+    font-size: 0.9rem; 
+    font-weight: 500; 
+    display: flex;
+    align-items: center; 
+    z-index: 20; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    white-space: nowrap;
+   
 }
 .badge-icon {
-    width: 18px; margin-right: 5px;
+    width: 23px; 
 }
 .badge-secure-payment {
-    top: 30%; right: 0;
+    top: 30%; 
+    right: 0;
     transform: rotate(3deg);
 }
 .badge-fast-delivery {
-    top: 55%; left: 5%; transform: rotate(-5deg);
+    top: 55%; 
+    left: 5%; 
+    transform: rotate(-5deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 /* Circular 'Shop Now' Badge */
 .circular-badge {
     position: absolute; bottom: 5%; right: 15%; width: 100px; height: 100px;
@@ -163,9 +347,7 @@ body {
 .section-title {
     text-align: center; font-size: 2.5rem;font-weight: 700;margin-bottom: 50px;color: var(--text-dark);
 }
-.purple-text {
-    color: var(--primary-purple); 
-}
+
 /* === Section 1: Occasions Grid === */
 .occasions-grid {
     max-width: 1200px;margin: 0 auto 80px;display: flex;justify-content: center;flex-wrap: wrap; gap: 20px; /* Space between items */
@@ -230,151 +412,37 @@ body {
     z-index: 10;transform: translateX(10%); 
 }
 /* Button */
-.btn-shop-now {
-    padding: 10px 25px;background-color: var(--primary-purple);color:white;border: none;border-radius: 8px;font-weight: 600;
-    cursor: pointer;
-}
+
 /* Override button style for the purple card */
 .card-purple .btn-shop-now {
     background-color:rgb(194, 119, 194);color: var(--primary-purple);color: white; font-size: 0.9rem; padding: 8px 20px;
   display: flex; justify-content: space-between; align-items: center;
 }
-.top-bar a {
-  color: yellow; text-decoration: underline; margin-left: 5px;
-}
-.top-right img {
-  width: 18px; margin-left: 10px;vertical-align: middle;
-}
-/* ===== NAVIGATION BAR ===== */
-.nav-bar {
-  background-color: #ffffff; color: #333; padding: 12px 20px; display: flex;justify-content: space-between;
-  align-items: center; border-bottom: 1px solid #eee;
-}
-.nav-left {
-  display: flex; align-items: center;
-}
-.nav-left img {
-    width: 30px; margin-right: 8px;
-}
-.logo-text {
-  font-weight: bold; font-size: 1.2rem; color: #6d28d9;
-}
-.nav-middle a {
-  margin: 0 12px; text-decoration: none; color: #333; font-size: 0.95rem;
-}
-.nav-middle a:hover {
-  color: #6d28d9; /* purple hover effect */
-}
-.nav-right img {
-  width: 20px; margin-left: 15px; vertical-align: middle;
-}
-/* === STYLING FOR THE SPLIT-LAYOUT SECTION === */
 
-/* Global Variables */
-:root {
-    --primary-purple:#6d28d9; --text-dark: #2a2a2a; --bg-main: #f0f0f5;  --bg-tagline: #e3e3ff; --pink-accent: #eb3b5a;
-}
-* {
-    box-sizing: border-box;
-}
-/* Base styling for the whole section (main-section) */
-.main-section {
-    background-color: var(--bg-main);
-    padding: 0 15px; 
-}
-/* Flex Container for the 50/50 split */
-.content-container {
-    max-width: 1200px; margin: 0 auto; padding: 80px 0; display: flex; align-items: center; gap: 40px;
-}
-/* === LEFT SIDE STYLING (main-left) === */
-.main-left { 
-    flex: 1; padding-right: 40px;
-}
-/* 1. Top Tagline Box */
-.tagline-box {
-    display: inline-flex; align-items: center; background-color: var(--bg-tagline);
-    color: var(--text-dark); font-weight: 500; padding: 8px 15px; border-radius: 20px;margin-bottom: 25px;
-}
-.tagline-icon {
-    width: 20px; margin-right: 8px;
-}
-/* 2. Main Headline */
-.main-title { background-color: #f6f6f6;
-    font-size: 3rem; font-weight: 700; line-height: 1.2; margin-bottom: 15px; color: var(--text-dark); 
-}
-.purple-text {
-    color: var(--primary-purple); 
-}
-/* 3. Description */
-.main-description {
-    font-size: 1rem; line-height: 1.6; margin-bottom: 30px; color: #666; max-width: 450px;
-}
-/* 4. Action Buttons Group */
-.action-group {
-    display: flex; align-items: center; gap: 20px;margin-bottom: 30px;
-}
-.btn-shop-now {
-    padding: 12px 30px; background-color: var(--primary-purple); color: white; border: none; border-radius: 8px;
-    font-weight: 600; cursor: pointer;
-}
-.btn-view-products {
-    color: var(--primary-purple); text-decoration: none; font-weight: 600; border-bottom: 2px solid var(--primary-purple);
-    padding-bottom: 2px;
-}
-/* 5. Ratings and Trust Group */
-.ratings-group {
-    display: flex; align-items: center; gap: 15px;
-}
-.avatar-group { display: flex; position: relative; height: 40px; width: 100px; }
-.customer-pic { width: 35px; height: 35px; border-radius: 50%; border: 2px solid var(--bg-main); position: absolute; object-fit: cover; }
-.customer-pic:nth-child(1) { left: 0px; z-index: 4; }
-.customer-pic:nth-child(2) { left: 20px; z-index: 3; }
-.customer-pic:nth-child(3) { left: 40px; z-index: 2; }
-.plus-sign { position: absolute; left: 60px; width: 35px; height: 35px; border-radius: 50%; background-color: var(--pink-accent); color: white; font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; z-index: 5; }
-.trust-text-group {
-    display: flex; flex-direction: column;
-}
-.rating-value {
-   font-weight: 600; color: var(--primary-purple);
-}
-.customer-count {
-    font-size: 0.85rem; color: #777;
-}
-/* === RIGHT SIDE STYLING (main-right) === */
-.main-right { 
-    flex: 1; position: relative; display: flex; justify-content: center;
-    align-items: flex-end; height: 600px; /* Fixed height for visual consistency */
-}
-.main-image {
-    width: 100%; height: 100%; max-width: 600px; object-fit: contain; 
-    z-index: 10;
-}
-/* Floating Info Badges */
-.floating-badge {
-    position: absolute; background-color: white; color: var(--primary-purple); padding: 10px 15px;
-    border-radius: 20px; font-size: 0.9rem; font-weight: 500; display: flex;
-    align-items: center; z-index: 20; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); white-space: nowrap;
-}
-.badge-icon {
-    width: 18px; margin-right: 5px;
-}
-.badge-secure-payment {
-    top: 20%; right: 0;
-    transform: rotate(3deg);
-}
-.badge-fast-delivery {
-    top: 55%; left: 5%; transform: rotate(-5deg);
-}
-/* Circular 'Shop Now' Badge */
-.circular-badge {
-    position: absolute; bottom: 5%; right: 15%; width: 100px; height: 100px;
-    background-color: var(--primary-purple); border-radius: 50%; display: flex; align-items: center;
-    justify-content: center; z-index: 20; box-shadow: 0 0 0 8px rgba(92, 0, 163, 0.2); 
-}
-.circle-text {
-    color: white; font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
-    text-align: center; line-height: 1.1;
-}
+/* .top-bar a {
+  color: yellow; text-decoration: underline; margin-left: 5px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* === OCCASIONS SECTION TWO=== */
 .secondary-section { 
     background-color: #ffffff;padding: 80px 15px; 
@@ -388,9 +456,7 @@ body {
 .section-title {
     text-align: center; font-size: 2.5rem;font-weight: 700;margin-bottom: 50px;color: var(--text-dark);
 }
-.purple-text {
-    color: var(--primary-purple); 
-}
+
 /* Occasions Grid */
 .occasions-grid {
     max-width: 1200px;margin: 0 auto 80px;display: flex;justify-content: center;flex-wrap: wrap; gap: 20px; /* Space between items */
@@ -454,15 +520,8 @@ body {
     position: absolute;right: 0;bottom: 0;height: 100%;width: 60%; object-fit: cover;border-radius: 0 12px 12px 0;
     z-index: 10;transform: translateX(10%); 
 }
-/* Button */
-.btn-shop-now {
-    padding: 10px 25px;background-color: var(--primary-purple);color:white;border: none;border-radius: 8px;font-weight: 600;
-    cursor: pointer;
-}
-/* Override button style for the purple card */
-.card-purple .btn-shop-now {
-    background-color:rgb(194, 119, 194);color: var(--primary-purple);
-}
+
+
 
 
 
@@ -1134,20 +1193,12 @@ width: 60%;
   
 }
 
-
-
 /* End of section 3 */
 
-/* section 4 ---------------- blessing */
-/* ========== SECTION 4 - Blessing ========== */
-/* ====== FIX PACK FOR HEADINGS & LAYOUT ====== */
 
-/* Page + container (light theme like the mockup) */
-body {
-  background: #efeff3;   /* light grey background */
-  color: #1f2937;        /* dark text */
-}
 
+
+/* section 4 ---------------- Blessing */
 .container {
   width: min(1100px, 92vw);
   margin: 56px auto 72px;
@@ -1369,7 +1420,6 @@ body {
 
 
 /* section 5 ------------ Rahmota */
-
 /* Instagram section */
 .instagram {
     text-align: center;
