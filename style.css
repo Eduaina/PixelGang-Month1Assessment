@@ -150,7 +150,8 @@ a:hover {
 .petals {
   position: absolute;
   width: 40px;
-  right: 160px;
+  right: 162px;
+  top: 0;
 }
 
 .main-title { 
@@ -278,9 +279,9 @@ a:hover {
 
 .main-image {
     height: 90vh; 
-    max-width: 600px;
+    width: 170%;
     z-index: 10;
-    margin: auto;
+    margin: 0 40px 0 0;
 }
 
 .floating-badge {
@@ -296,267 +297,315 @@ a:hover {
     z-index: 20; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
     white-space: nowrap;
-   
+    width: 125px;
+    height: 20px;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
+
 .badge-icon {
-    width: 23px; 
+    padding: 2px;   
 }
+
 .badge-secure-payment {
     top: 30%; 
-    right: 0;
-    transform: rotate(3deg);
+    right: 140px;
+    transform: rotate(-1deg);
 }
+
 .badge-fast-delivery {
     top: 55%; 
-    left: 5%; 
-    transform: rotate(-5deg);
+    left: -100px; 
+    transform: rotate(2deg);
 }
 
+.badges {
+  width: 28px;
+  height: 28px;
+  border-radius: 35%;
+  background-color: #46046d;
+}
 
+.pet {
+  position: absolute;
+  width: 20px;
+  right: 130px;
+  top: 170px;
+}
 
+.als {
+  position: absolute;
+  width: 20px;
+  right: 630px;
+  top: 360px;
+}
 
-
-
-
-
-
-
-
-
-/* Circular 'Shop Now' Badge */
 .circular-badge {
-    position: absolute; bottom: 5%; right: 15%; width: 100px; height: 100px;
-    background-color: var(--primary-purple); border-radius: 50%; display: flex; align-items: center;
-    justify-content: center; z-index: 20; box-shadow: 0 0 0 8px rgba(92, 0, 163, 0.2); 
+    position: absolute; 
+    bottom: 50px; 
+    right: 100px; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    z-index: 20; 
+    box-shadow: 0 0 0 8px rgba(92, 0, 163, 0.2); 
 }
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
 .circle-text {
-    color: white; font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
-    text-align: center; line-height: 1.1;
+  position: absolute;
+    color: white; 
+    font-size: 0.9rem; 
+    font-weight: 700; 
+    text-transform: uppercase;
+    text-align: center; 
+    line-height: 1.1;
 }
+
+.circle-text:nth-child(1) {
+  transform: rotate(10deg);
+}
+
+.circle-text:nth-child(2) {
+  transform: rotate(40deg);
+}
+
+.circle-text:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+
+
+
 /* OCCASIONS */
 /* Main Section Wrapper */
 .secondary-section { 
-    background-color: #ffffff;padding: 80px 15px; 
-}
-/* Section Headings */
-.occasions-header {
-    max-width: 1200px;margin: 0 auto;padding-bottom: 20px;
-}
-.top-heading-text {display: block;text-align: center;color: #999;font-size: 1rem;font-weight: 500;margin-bottom: 5px;
-}
-.section-title {
-    text-align: center; font-size: 2.5rem;font-weight: 700;margin-bottom: 50px;color: var(--text-dark);
+    background-color: #ffffff;
 }
 
-/* === Section 1: Occasions Grid === */
+.occasions-container {
+  display: flex;
+  flex-direction: column; 
+    align-items: center; 
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Im0xMi41OTMgMjMuMjU4bC0uMDExLjAwMmwtLjA3MS4wMzVsLS4wMi4wMDRsLS4wMTQtLjAwNGwtLjA3MS0uMDM1cS0uMDE2LS4wMDUtLjAyNC4wMDVsLS4wMDQuMDFsLS4wMTcuNDI4bC4wMDUuMDJsLjAxLjAxM2wuMTA0LjA3NGwuMDE1LjAwNGwuMDEyLS4wMDRsLjEwNC0uMDc0bC4wMTItLjAxNmwuMDA0LS4wMTdsLS4wMTctLjQyN3EtLjAwNC0uMDE2LS4wMTctLjAxOG0uMjY1LS4xMTNsLS4wMTMuMDAybC0uMTg1LjA5M2wtLjAxLjAxbC0uMDAzLjAxMWwuMDE4LjQzbC4wMDUuMDEybC4wMDguMDA3bC4yMDEuMDkzcS4wMTkuMDA1LjAyOS0uMDA4bC4wMDQtLjAxNGwtLjAzNC0uNjE0cS0uMDA1LS4wMTgtLjAyLS4wMjJtLS43MTUuMDAyYS4wMi4wMiAwIDAgMC0uMDI3LjAwNmwtLjAwNi4wMTRsLS4wMzQuNjE0cS4wMDEuMDE4LjAxNy4wMjRsLjAxNS0uMDAybC4yMDEtLjA5M2wuMDEtLjAwOGwuMDA0LS4wMTFsLjAxNy0uNDNsLS4wMDMtLjAxMmwtLjAxLS4wMXoiLz48cGF0aCBmaWxsPSIjMWQwYjMwIiBkPSJNMTAuNTg2IDIuNWEyIDIgMCAwIDEgMi43MDEtLjExN2wuMTI3LjExN2wxLjYyNyAxLjYyNmwuMTc0LS4yNDJsLjMxNS0uNDUzbC4yMDUtLjMwOGwuMjA2LS4zMjljLjMwOC0uNDguNjc3LS45MzcgMS4zMjYtLjc1OGExIDEgMCAwIDEgLjcyNi44NDNMMTggM3Y2YTYgNiAwIDAgMS00Ljc2NSA1Ljg3M2wtLjIzNS4wNDR2NGE2LjAxIDYuMDEgMCAwIDAgNC40MjMtMy4zNDZhMSAxIDAgMSAxIDEuODA3Ljg1OEE4IDggMCAwIDEgMTMgMjAuOTRjMCAuNTY2LS40MDcgMS4wNjEtMSAxLjA2MXMtMS0uNDk1LTEtMS4wNjJhOCA4IDAgMCAxLTYuMjMtNC41MDlhMSAxIDAgMCAxIDEuODA3LS44NThhNi4wMSA2LjAxIDAgMCAwIDQuMTcgMy4yOThsLjI1My4wNDh2LTRhNiA2IDAgMCAxLTQuOTk1LTUuNjdMNiA5VjNhMSAxIDAgMCAxIC43MzMtLjk2NGMuNTk3LS4xNjUuOTU5LjIxMiAxLjI1NC42NDlsLjM0NS41NDJsLjEzOC4yMDRsLjMxNS40NTNsLjE3NC4yNDJ6TTE2IDYuMTYzYy0uNTEyLjYzNy0xLjExMSAxLjMwNC0xLjczNSAxLjgyNEMxMy42NyA4LjQ4MyAxMi44NzIgOSAxMiA5cy0xLjY3LS41MTctMi4yNjUtMS4wMTNjLS41Mi0uNDMzLTEuMDIyLS45NjgtMS40NzItMS41MDNMOCA2LjE2NFY5YTQgNCAwIDAgMCA3Ljk5NS4yTDE2IDl6bS00LTIuMjQ5bC0xLjc3NCAxLjc3NGwuMzg1LjQyYy40LjQyNC45MTEuODkyIDEuMzg5Ljg5MnMuOTktLjQ2OCAxLjM5LS44OTJsLjM4NC0uNDJ6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: top 90px right 620px;
+}
+
+.occassions-overlay {
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  width: 100%;
+  text-align: center;
+  margin: 60px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    color: #262626;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.h2-span {
+    color: #6A00AD;
+}
+
+.occassions-overlay h2{
+  margin: -45px 0 100px 0;
+}
+
 .occasions-grid {
-    max-width: 1200px;margin: 0 auto 80px;display: flex;justify-content: center;flex-wrap: wrap; gap: 20px; /* Space between items */
+    margin: -70px 0 50px 120px;
+    display: flex;
+    gap: 16px; 
 }
 .occasion-item {
-    display: flex;flex-direction: column;align-items: center;text-align: center;width: 120px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-/* Styling the circular icon background */
+
 .icon-circle {
-    width: 80px;height: 80px;background-color: var(--bg-tagline); border-radius: 50%;display: flex;justify-content: center;
-    align-items: center;margin-bottom: 10px;padding: 15px; 
+    width: 120px;
+    height: 100px;
+    background-color: #F6F6F6; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px; 
 }
 .occasion-icon {
-    width: 100%;height: 100%;object-fit: contain;
+    width: 90px;
+    height: 80px;
+    border-radius: 50%
 }
-/* Descendant Selector: Styling the occasion text (<p> tag) */
-.occasion-item p {font-weight: 600;color:(--text-dark);margin-bottom: 2px;
+
+.occasion-item p {
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 8px;
 }
+
 .product-count {
-    font-size: 0.8rem;color: #888;
+    font-size: 0.9rem;
+    color: #7d7b7b;
 }
 .promo-cards-container {
-    max-width: 1200px;margin: 0 auto;display: flex; gap: 30px;
+    width: 82%;
+    margin: 0 auto 100px auto;
+    display: flex; 
+    gap: 30px;
     padding: 0 15px;
 }
 .promo-card {
-    flex: 1;position: relative;display: flex;border-radius: 12px;overflow: hidden;padding: 30px; min-height: 350px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 30px; 
+    height: 280px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
-/* Card 1: Default (Light Background) */
-.card-default {
-    background-color: #f6f6f6;color: var(--text-dark);
-}
-/* Card 2: Purple Background */
-.card-purple {
-    background-color: var(--primary-purple);color: white; 
-}
-/* Content Area within the card */
-.card-content {
-    z-index: 20;max-width: 50%; /* Content takes half the card width */position: relative;padding-right: 20px;
-}
-/* Discount Tag */
-.discount-tag {display: inline-block;padding: 5px 10px;border-radius: 5px;font-size: 0.8rem;font-weight: 600;margin-bottom: 15px;
-}
-.tag-dark {
-    background-color:white;color:black;
-}
-.tag-light {
-    background-color:rgb(96, 11, 96);color:white;
-}
-/* Descendant Selector for Title (H3 tag) */
-.promo-card h3 {
-    font-size: 1.8rem;font-weight: 700;line-height: 1.2;margin-bottom: 10px;
-}
-/* Descendant Selector for Description (P tag) */
-.promo-card p {
-    font-size: 0.9rem;line-height: 1.4;margin-bottom: 20px;
-}
-/* Image Positioning */
-.promo-image {
-    position: absolute;right: 0;bottom: 0;height: 100%;width: 60%; object-fit: cover;border-radius: 0 12px 12px 0;
-    z-index: 10;transform: translateX(10%); 
-}
-/* Button */
 
-/* Override button style for the purple card */
+.card-default {
+    background-color: #F6F6F6;
+    color: #252525;
+}
+
+.card-purple {
+    background-color: #5E00A6;
+    color: white; 
+}
+
+.card-content {
+    z-index: 20;
+    width: 50%; 
+    position: relative;
+    padding-right: 20px;
+}
+
+.discount-tag {
+  display: inline-block;
+  padding: 10px 16px ;
+  border-radius: 35px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.tag-dark {
+    background-color:white;
+    color:black;
+}
+
+.tag-light {
+    background-color: #6D19B0;
+    color:white;
+}
+
+.promo-card h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: -3px 0 0 0;
+}
+
+.promo-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.card-default p {
+  color: #867f7f;
+}
+
+.card-purple p {
+  color: #C185DB;
+}
+
+.promo-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 70%; 
+    object-fit: cover;
+}
+
+.card-default .promo-image {
+  width: 60%; 
+}
+
 .card-purple .btn-shop-now {
-    background-color:rgb(194, 119, 194);color: var(--primary-purple);color: white; font-size: 0.9rem; padding: 8px 20px;
-  display: flex; justify-content: space-between; align-items: center;
-}
-
-/* .top-bar a {
-  color: yellow; text-decoration: underline; margin-left: 5px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* === OCCASIONS SECTION TWO=== */
-.secondary-section { 
-    background-color: #ffffff;padding: 80px 15px; 
-}
-/* Section Headings */
-.occasions-header {
-    max-width: 1200px;margin: 0 auto;padding-bottom: 20px;
-}
-.top-heading-text {display: block;text-align: center;color: #999;font-size: 1rem;font-weight: 500;margin-bottom: 5px;
-}
-.section-title {
-    text-align: center; font-size: 2.5rem;font-weight: 700;margin-bottom: 50px;color: var(--text-dark);
-}
-
-/* Occasions Grid */
-.occasions-grid {
-    max-width: 1200px;margin: 0 auto 80px;display: flex;justify-content: center;flex-wrap: wrap; gap: 20px; /* Space between items */
-}
-.occasion-item {
-    display: flex;flex-direction: column;align-items: center;text-align: center;width: 120px; 
-}
-/* Styling the circular icon background */
-.icon-circle {
-    width: 80px;height: 80px;background-color: var(--bg-tagline); border-radius: 50%;display: flex;justify-content: center;
-    align-items: center;margin-bottom: 10px;padding: 15px; 
-}
-.occasion-icon {
-    width: 100%;height: 100%;object-fit: contain;
-}
-/* Descendant Selector: Styling the occasion text (<p> tag) */
-.occasion-item p {font-weight: 600;color:(--text-dark);margin-bottom: 2px;
-}
-.product-count {
-    font-size: 0.8rem;color: #888;
-}
-.promo-cards-container {
-    max-width: 1200px;margin: 0 auto;display: flex; gap: 30px;
-    padding: 0 15px;
-}
-.promo-card {
-    flex: 1;position: relative;display: flex;border-radius: 12px;overflow: hidden;padding: 30px; min-height: 350px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-}
-/* Card 1: Default (Light Background) */
-.card-default {
-    background-color: #f6f6f6;color: var(--text-dark);
-}
-/* Card 2: Purple Background */
-.card-purple {
-    background-color: var(--primary-purple);color: white; 
-}
-/* Content Area within the card */
-.card-content {
-    z-index: 20;max-width: 50%; /* Content takes half the card width */position: relative;padding-right: 20px;
-}
-/* Discount Tag */
-.discount-tag {display: inline-block;padding: 5px 10px;border-radius: 5px;font-size: 0.8rem;font-weight: 600;margin-bottom: 15px;
-}
-.tag-dark {
-    background-color:white;color:black;
-}
-.tag-light {
-    background-color:rgb(96, 11, 96);color:white;
-}
-/* Descendant Selector for Title (H3 tag) */
-.promo-card h3 {
-    font-size: 1.8rem;font-weight: 700;line-height: 1.2;margin-bottom: 10px;
-}
-/* Descendant Selector for Description (P tag) */
-.promo-card p {
-    font-size: 0.9rem;line-height: 1.4;margin-bottom: 20px;
-}
-/* Image Positioning */
-.promo-image {
-    position: absolute;right: 0;bottom: 0;height: 100%;width: 60%; object-fit: cover;border-radius: 0 12px 12px 0;
-    z-index: 10;transform: translateX(10%); 
+  background-color:rgb(194, 119, 194);
+  color: #3F152C;
+  font-size: 1rem; 
+  padding: 10px 25px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 40px;
 }
 
 
+.card-default .btn-shop-now {
+  font-size: 1rem; 
+  padding: 10px 25px;
+  margin-top: 30px;
+}
+
+/* end of section 1 by Joan*/
 
 
 
-/* end of section 1 */
 
 /* section 2 -------------- Edua */
 /* About Us */
 .section2 {
     background-color: white;
-    height: 300vh;
-    width: 80%;
     margin: 0 auto;
 }
 
 .aboutUs {
     background-color: #F6F6F6;
-    height: 95vh;
+    height: 100vh;
 }
 
 .sides {
-    width: 85%;
-    height: 85vh;
+    width: 78%;
+    height: 60vh;
     margin: 0 auto;
+    padding: 100px 0 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .left {
-    background-image: url(/images/Holiday-sales2.jpg);
+    background-image: url(https://media.istockphoto.com/id/1480118077/photo/woman-working-at-flower-shop-holding-potted-plant-looking-at-camera.jpg?s=612x612&w=0&k=20&c=JsWp9N8kpXrqvLl9_fWMHMZ73oLSmRpO4Yvk-fNO0x0=);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    width: 42%;
-    height: 68vh;
+    width: 40%;
+    height: 73vh;
     margin: 60px 0 0 0;
     position: relative;
 }
@@ -564,8 +613,8 @@ a:hover {
 .left .round-circle {
     border: 2px solid white;
     border-radius: 50%;
-    height: 62vh;
-    margin: 12px auto;
+    height: 65vh;
+    margin: 18px auto;
     width: 90%;
 
 }
@@ -591,8 +640,8 @@ a:hover {
     position: absolute;
     width: 200px;
     height: 200px;
-    top: 250px;
-    left: 30px;
+    top: 280px;
+    left: 20px;
 }
 
 .right {
@@ -601,28 +650,21 @@ a:hover {
     margin-left: 60px;
     background-image: url(/images/flower-variant-with-many-petals-svgrepo-com.svg);
     background-position: center;
-    background-size: cover;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: top 10px right 20px;
 }
 
-.overlay.one {
+.overlay.onee {
     background: #F6F6F6;
     opacity: .8;
 }
 
-h6 {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.h2 {
+.h2.deliver {
     color: #262626;
     font-size: 40px;
     font-weight: bolder;
-    margin-top: -35px;
-}
-
-.h2-span {
-    color: #6A00AD;
+    margin: -35px 0 30px 0;
 }
 
 #text {
@@ -672,43 +714,48 @@ h5 {
     font-weight: 400;
     font-style: normal;
 }
-
 /*End of About Us */
 
 /* Our Products */
 .products-sales {
-    background-image: url(/images/festive-stars-background-design-vector.png);
+    background-image: url(/images/sakura.png);
     background-position: center;
-    background-size: cover;
+    background-size: 200px;
 }
 
-.overlay.two {
-    background-color: white;
-    opacity: .9;
+.overlay-one {
+    background: white;
+    opacity: .95;
 }
 
 .ourProducts {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 91%;
-    margin: 40px 0 20px 90px;
-    overflow-x: hidden;
+}
+
+.ourProducts h6 {
+  margin: 80px 0 20px 150px;
 }
 
 .products-header {
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin: 0 0 0 150px;
+}
+
+.products-header h2 {
+  font-size: 40px;
 }
 
 .products-header button {
     position: relative;
-    right: 20px;
+    right: 160px;
     top: -30px;
     width: 170px;
     height: 40px;
-    background-color: #600199;
+    background-color: #5E00A6;
     border-radius: 40px;
     color: #F8D4FF;
     border: none;
@@ -718,11 +765,12 @@ h5 {
 .productList {
   display: flex;
   gap: 15px;
+  margin: 40px 0 20px 150px;
   overflow: hidden;
 }
 
 .product {
-  flex: 0 0 292px;
+  flex: 0 0 272px;
   height: 400px;
   border-radius: 20px;
   background: #ffffff;
@@ -860,57 +908,45 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  position: relative;
-  width: 85%;
-  margin: auto;
+  /* padding: 40px; */
+  width: 80%;
+  margin: 80px 0 20px 150px;
+  gap: 20px;
 }
 
-/* Side images */
 .sales-left,
 .sales-right {
-  width: 250px;
-  position: relative;
+  flex: 1;
+  height: 70vh;
+  background-color: #111;
+  border-radius: 20px;
 }
 
 .sales-left img,
 .sales-right img {
   width: 100%;
-  display: block;
+  height: 70vh;
+  object-fit: cover;
   border-radius: 20px;
-
-  clip-path: path("M20,0 Q125,20 230,0 L250,0 L250,500 L0,500 L0,0 Z"); 
 }
 
 .white-border-rectangle {
-  position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
-  height: 100%;
-  border: 2px solid #fff;
+  height: 65vh;
+  border: 2px solid #ffffff;
   border-radius: 20px;
-  pointer-events: none;
 }
 
 .sales-middle {
-  position: relative;
-  background: #fff;
+  background-image: url(/images/23_maret_11.jpg);
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  padding: 40px 60px;
+  height: 70vh;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
-  margin: 0 20px;
-}
-
-.h2 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.h2-span {
-  color: #7a1fd1;
+  flex: 3;
 }
 
 .subtitle {
@@ -973,16 +1009,12 @@ h5 {
   bottom: -30px;
   right: -40px;
 }
-
-/* End of section 2 */
+/* End of section 2 by Eduaina*/
 
 /* section 3 ------------ Temmie */
 
-.section3{
-    height: 300vh;
-    width: 80%;
+.section3 {
     margin: 0 auto;
-    background-color: #F6F6F6;
 }
 
 .new-arrival-sect >  {
@@ -996,6 +1028,7 @@ h5 {
   height: 6vh;
   width: 100%;
   align-content: center;
+  margin-top: 80px;
 }
 .marque {
   display: flex;
@@ -1125,7 +1158,7 @@ h5 {
   font-size: 1.rem;
   color: #9f9f9f;
 }
-.shop-btn {
+.shopbtn {
   color: #5e00a6;
   display: flex;
   align-items: center;
@@ -1150,7 +1183,7 @@ h5 {
   border: 2px solid transparent;
   border-radius: 20px;
   background-color: #5e00a6;
-  width: 85%;
+  width: 100%;
 }
 .weekly-text-sec {
   padding: 30px;
@@ -1163,7 +1196,8 @@ h5 {
 .weekly-text-sec > h2{
 font-size: 3rem;
 text-transform: capitalize;
-width: 60%;
+width: 65%;
+color: white;
 }
 .beautiful-flowers {
   color:#fd93e8;
@@ -1190,7 +1224,108 @@ width: 60%;
 .weekly-img-sec > img {
   width: 30vw;
   height: 50vh;
-  
+}
+
+.best-seller-sec{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.deals-of-the-day-sec{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 85%;
+}
+.deals-of-the-day > h4{
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.deals-of-the-day > h3{
+  font-size: 3rem;
+}
+.deals-of-the-day-sec > p{
+  width: 50%;
+  font-size: 1.5rem;
+  margin-top: 12%;
+}
+.deals-sec{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.deals {
+  color:#CF81F4 ;
+}
+
+.best-seller {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+  width: 100%;
+}
+.best-seller-img{
+  position: relative;
+}
+.best-seller-img > img{
+  width: 20vw;
+  height: 90vh;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  /* position: relative; */
+}
+.shopnow-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.shopnow {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  border: 3px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  width: 18vw;
+
+  align-items: center;
+}
+.shopnow > h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+  position: absolute;
+  bottom: 150px;
+
+}
+.shopnow > h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  bottom: 90px;
+}
+.shopnow > p{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+  bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  overflow: hidden;
 }
 
 /* End of section 3 */
@@ -1420,16 +1555,121 @@ width: 60%;
 
 
 /* section 5 ------------ Rahmota */
-/* Instagram section */
-.instagram {
+/* Follow-us section */
+.follow.us {
     text-align: center;
     padding: 40x20px;
 }
 
+.follow.us h2 span {
+  color: purple;
+}
+.follow.us div {
+  display: flex;
+  flex-wrap: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.follow.us img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-.instagram h2 {
-    font-size: 24px;
-    margin: auto;
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  background: purple;
+  padding: 15px;
+  gap: 25px;
+}
+
+.categories a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq {
+  padding: 40px 20px;
+}
+.faq h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.faq h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.faq h2 span {
+  color: purple;
+}
+.faq-contaioner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+.faq-list {
+  flex: 2;
+}
+.faq-item {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+}
+.faq-item.active {
+  background: purple;
+  color: #fff;
+}
+.faq-item.active .faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.faq-support {
+  flex: 1;
+}
+.support-box {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.support-box h4 {
+margin-bottom: 10px;
+}
+.support-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: purple;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #fafafa;
+  margin-top: 30px;
+}
+.features p {
+  font-weight: bold;
+  font-size: 16px;
+}
+.features span {
+  font-size: 14px;
+  color: black;
 }
 
 
