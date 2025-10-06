@@ -1770,6 +1770,7 @@ button:hover {
   list-style: none;
   cursor: pointer;
   padding: 20px 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
@@ -1833,12 +1834,12 @@ button:hover {
 }
 
 .support-box h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 .support-box p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
