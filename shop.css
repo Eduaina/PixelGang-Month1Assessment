@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    margin: 200px;
+    background: radial-gradient(circle at 30% 30%, #560f33, #770a7b 40%, #ff1a75 80%);
+}
+
+h1 {
+    font-size: 100px;
+    color: #b19dc2;
+}
