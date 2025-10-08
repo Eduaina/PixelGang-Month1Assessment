@@ -570,8 +570,6 @@ h2 {
 .card-purple .btn-shop-now {
   background-color: #f38eeb;
   color: #3F152C;
-  font-size: 1rem; 
-  padding: 10px 25px;
   display: flex; 
   justify-content: space-between; 
   align-items: center;
@@ -579,8 +577,6 @@ h2 {
 }
 
 .card-default .btn-shop-now {
-  font-size: 1rem; 
-  padding: 10px 25px;
   margin-top: 30px;
 }
 
