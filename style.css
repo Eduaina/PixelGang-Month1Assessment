@@ -90,7 +90,7 @@ body {
 .logo-text {
   font-weight: bolder; 
   font-size: 1.3rem; 
-  color: #222222;
+  color: #242424;
 }
 
 .logo-text a {
@@ -186,14 +186,15 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.btn-shop-now {
-    padding: 12px 30px; 
+button {
+  padding: 12px 30px; 
     background-color: #550795; 
-    color: rgba(255, 255, 255, 0.846); 
+    color: rgba(255, 255, 255, 0.966);
     border: none; 
     border-radius: 30px;
-    font-weight: 600; 
+    font-weight: 500; 
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .btn-view-products {
